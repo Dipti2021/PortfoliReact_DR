@@ -1,0 +1,28 @@
+@import "../../global.scss";
+
+
+.topbar{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    color:$mainColor;
+    position: fixed;
+    top:0;// top nav bar is always fixed
+    z-index: 2;
+
+    .wrapper{
+        padding:10px 30px;
+        display:flex;
+        align-items:center;// for alligning home projects etc
+        justify-content: space-between;
+
+
+        .left{
+
+            .logo{
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+    }
+}
