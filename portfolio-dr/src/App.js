@@ -5,11 +5,16 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
 import Contact from "./components/contact/Contact";
 import './app.scss';
+import{useState} from "react";
+import Menu from "./components/menu/Menu";
+
 
 function App() {
-  return (
+  const[menuOpen, setMenuOpen]= useState(false)// for making the menu change the state to active and dyanamic, with initial stage set as false
+  return (//declare the 2 paramenters in topbar.js
     <div className="app">
-      <Topbar />
+      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         
         <Intro />
