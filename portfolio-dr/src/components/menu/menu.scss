@@ -24,7 +24,7 @@
         font-size: 30px;
         font-weight: 300;
         color: white;
-        width: 60%;
+        width: 40%;
 
         li{
             margin-bottom: 25px;
@@ -32,10 +32,21 @@
                 font-size: inherit;
                 color: inherit;
                 text-decoration: none;
+
+
+                
             }
-            &:hover{
-                font-weight: 500;//width is widened
+            &.hover{
+
+                font-weight: 500;//doesnt work chck again
             }
+
+            
+
+
+
+
+
         }
 
     }
