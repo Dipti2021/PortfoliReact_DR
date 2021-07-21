@@ -11,7 +11,6 @@
     "projects": [
         {
             "title": "Book Search Engine",
-            "startDate": "2020",
             "description": "Ce projet refactorise un moteur de recherche d'API Google Books d'une API RESTful à une API GraphQL avec Apollo Server. Le moteur de recherche est construit à l'aide de la pile MERN - MongoDB, Express.js, React et Node.js. Un utilisateur peut créer un compte, rechercher des livres et les enregistrer dans une liste. Sur une page rendue séparément, l'utilisateur peut voir ses livres enregistrés et supprimer des livres de la liste.",
             "images": [
               "images/budget.jpg",
@@ -50,7 +49,6 @@
           },
         {
             "title": "Budget Tracker",
-            "startDate": "2020",
             "description": "Pour cette application, l'utilisateur peut ajouter et/ou soustraire ses dépenses et ses dépôts à une feuille de budget donnée. Cela peut être fait à la fois lorsque vous êtes en ligne ou hors ligne. Le concept de PWA a été utilisé. Le fichier webmanifest est utile pour travailler en mode hors ligne. Pour cette application, j'ai utilisé mongo DB et déployé les données dans le cloud à l'aide de Mongo BD Atlas et est finalement déployé sur Heroku.IndexDB dans l'application stocke le budget qui est ensuite déployé dans l'application heroku.",
             "images": [
                 "images/budget.jpg",
@@ -83,7 +81,6 @@
         },
         {
             "title": "Toddler Town",
-            "startDate": "2020",
             "description": "Les parents qui travaillent, en particulier une mère, ont toujours du mal à reprendre son travail car ils n'ont pas beaucoup de ressources pour envoyer leurs jeunes dans une bonne garderie. Choisir une option parmi tant d'options disponibles en ligne et en personne est toujours une tâche ardue. .Surtout pour les enfants ayant des besoins particuliers ou qui ont besoin d'une attention particulière, la finalisation d'une bonne garderie est de la plus haute importance.Nous avons essayé de résoudre ces problèmes en créant une application qui permet à un utilisateur de sélectionner une ville où il réside/ou prévoit pour aller connaître les 10 meilleures garderies abordables dans leur emplacement. L'utilisateur sera présenté avec les détails complets sur une garderie en particulier qui comprendra son adresse, ses contacts et son lien Web pour n'en nommer que quelques-uns. Non seulement cela, mais si l'utilisateur souhaite poser une question, en général, sur un sujet spécifique ou souhaite donner plus d'informations, il peut accéder à notre section d'avis et partager ses informations avec d'autres.",
             "images": [
                 "images/landing.png",
@@ -116,7 +113,6 @@
         },
         {
             "title": " You Have Got Meme",
-            "startDate": "2020",
             "description": "Une application Web très simple et réactive qui vous permet de générer vos propres mèmes. Une application frontale où vous pouvez choisir une image à partir de votre appareil et saisir les détails de l'en-tête et du pied de page pour celle-ci. Une fois cela fait, vous pouvez générer un mème en cliquant sur le bouton Votre mème.",
             "images": [
                 "images/ques.png",
@@ -146,7 +142,6 @@
           },
         {
             "title": "Vibe Musical",
-            "startDate": "2020",
             "description": "Cette application qui permet non seulement à un utilisateur de tout âge de connaître n'importe quel instrument de musique qui pourrait l'intéresser, mais aussi de parcourir l'histoire de cet instrument et de le connaître en détail. Non seulement cela, mais l'utilisateur pourra apprendre à jouer de l'instrument recherché à l'aide d'une série de didacticiels vidéo. Et si vous vous ennuyez, vous pouvez jouer de certains instruments pour vous mettre de bonne humeur.",
             "images": [
                 "images/vibe.png",
