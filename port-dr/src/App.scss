@@ -105,6 +105,7 @@ header h1 {
 .styles_typicalWrapper__1_Uvh::after {
 	cursor: none !important;
 	display: none;
+	//font-family: Arial, Helvetica, sans-serif;
 }
 
 #about {
@@ -222,11 +223,6 @@ header h1 {
 	background: #efe1bd;
 }
 
-.experience-icon {
-	font-size: 300%;
-	margin-top: 25%;
-	text-align: center;
-}
 
 .main-badge {
 	font-size: 13px !important;
@@ -239,29 +235,12 @@ header h1 {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.experience-badge {
-	font-size: 11px !important;
-	text-align: left !important;
-	padding: 5px 8px 5px 8px !important;
-	vertical-align: baseline;
-	background-color: #f9f5e9 !important;
-	color: black;
-	font-weight: lighter !important;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 
 .vertical-timeline-element-date {
 	padding: 0 !important;
 	margin: 0 !important;
 }
 
-@media only screen and (max-width: 1170px) {
-	.experience-icon {
-		font-size: 170%;
-		margin-top: 27%;
-		text-align: center;
-	}
-}
 
 .modal-inside .modal-content {
 	background: white;
@@ -377,7 +356,7 @@ header h1 {
 }
 
 #skills {
-	background: #1F1F1F;
+	background: #6566b9;
 	min-height: 200px;
 	width: 100%;
 	overflow: hidden;
@@ -402,11 +381,12 @@ header h1 {
 }
 
 footer {
-	background: #1F1F1F;
+	background: #bb2828;
+	
 	min-height: 100px;
 	width: 100%;
 	overflow: hidden;
-	font-size: 14px;
+	font-size: 20px;
 	color: white;
 	position: relative;
 	text-align: center;

@@ -4,7 +4,7 @@ body[data-theme="dark"] {
     
      
     .slider-tab {
-       background-color: #8C8C8C;
+       background-color: #8b2626;
     }
  
     .title-styles {
@@ -12,7 +12,7 @@ body[data-theme="dark"] {
     }
  
     .header-icon {
-       color: #3C342C;
+       color: #4f8145;
        opacity: 0.8;
     }
  
@@ -29,7 +29,7 @@ body[data-theme="dark"] {
     }
  
     .project-date {
-       background-color: #918e97;
+       background-color: #242129;
        color: white;
     }
  
@@ -41,12 +41,12 @@ body[data-theme="dark"] {
     }
  
     #about {
-       background-color: #7f7f7f;
+       background-color: #3f0f75;
        h1 span {
           color: white;
        }
        .polaroid span {
-          background:  #6d6d6d;
+          background:  #af8080;
        }
        .card {
           background: #6d6d6d;
@@ -55,12 +55,12 @@ body[data-theme="dark"] {
     }
  
     #portfolio {
-       background: #5b5b5b;
+       background: #362222;
        .section-title {
           color: white !important;
        }
        .foto div {
-          background: #6d6d6d;
+          background: #1b1f1a;
        }
        .project-title-settings {
           color: white;
@@ -76,7 +76,7 @@ body[data-theme="dark"] {
  
       
        .main-badge {
-          background: #919191 !important;
+          background: #c58a8a !important;
        }
  
        .vertical-timeline-element-date {
@@ -88,13 +88,13 @@ body[data-theme="dark"] {
        }
        @media only screen and (max-width: 1169px) { 
           .vertical-timeline-element-date {
-             color: black;
+             color: rgb(68, 56, 56);
           }
        }
     }
  
     .modal-inside .modal-content {
-       background: #5b5b5b;
+       background: #5a3434;
        color: white;
     }
  

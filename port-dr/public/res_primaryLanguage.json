@@ -1,83 +1,171 @@
 {
-    "basic_info": {
-      "description_header": "Hi",
-      "description": "Hi there! Welcome to my Portfolio. Apart from being an avid movie buff, I am an engineer with a background in education sector. Currently, I am enrolled in the Certificate Course of Full Stack Web Developement at the Carleton University.I have been learning about various languages and frameworks like JavaScript, CSS3, HTML5, jQuery to name a few. I have created some front end and back end applications which are based on RESTful API's and MVC format.. I have created projects using databases thst include MYSQL, NoSQL, MongoDB and Robo 3T. Lately, I have started working on projects based on React and MERN. An understanding and love for all these different frameworks and technologies is bringing me more closer to becoming a full stack developer.Thank you for taking out the time and visiting my website.",
-      "section_name": {
-        "about": "About me",
-        "projects": "Projects",
-        "skills": "Skills"
-        
-      }
+  "basic_info": {
+    "description_header": "Welcome to my portfolio!",
+    "description": "Apart from being an avid movie buff, I am an engineer with a background in education sector. Currently, I am enrolled in the Certificate Course of Full Stack Web Developement at the Carleton University.I have been learning about various languages and frameworks like JavaScript, CSS3, HTML5, jQuery to name a few.I have created some front end and back end applications which are based on RESTful API's and MVC format.. I have created projects using databases thst include MYSQL, NoSQL, MongoDB and Robo 3T. Lately, I have started working on projects based on React and MERN. An understanding and love for all these different frameworks and technologies is bringing me more closer to becoming a full stack developer.Thank you for taking out the time and visiting my website.",
+    "section_name": {
+      "about": "About me",
+      "projects": "Projects",
+      "skills": "Skills"
+      
+    }
+  },
+  "projects": [
+    {
+      "title": "Book Search Engine",
+      "startDate": "2020",
+      "description": "This project refactors a Google Books API search engine from a RESTful API to a GraphQL API with Apollo Server. The search engine is built using the MERN stack - MongoDB, Express.js, React, and Node.js. A user can create an account, search for books, and save them to a list. On a separately rendered page, the user can see their saved books and remove books from the list.",
+      "images": [
+        "images/budget.jpg",
+        "images/online.png",
+        "images/offline.png"
+      ],
+      "url": "https://booksearchdr.herokuapp.com/",
+            
+      "technologies": [
+        {
+          "class": "devicon-react-plain",
+          "name": "React"
+        },
+        {
+          "class": "devicon-json-plain",
+          "name": "JSON"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-mongodb-plain",
+          "name": "MongoDB"
+        },
+        {
+          "class": "devicon-graphql-plain",
+          "name": "Graphql"
+        },
+
+        {
+          "class": "devicon-heroku-plain",
+          "name": "Heroku"
+        }
+      ]
     },
-    "projects": [
-      {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
-        "images": [
-          "images/portfolio/animal-shelter/p1.jpg"
-          
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-javascript-plain",
-            "name": "Javascript"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      }
-    ]
-    
-  }
+    {
+      "title": "Budget Tracker",
+      "startDate": "2020",
+      "description": "For this application, the user can adding and/or subtracting his expenses and deposits to a given budgetsheet.It can be done both when you are online or offline. The concept of PWA's has been used webmanifest file is helpful in working in the offline mode. For this application,I have used mongo DB and deployed the data to cloud using Mongo BD Atlas and is finally deployed on Heroku.IndexDB in the application stores the budget which is further deployed in the heroku app.",
+      "images": [
+        "images/budget.jpg",
+        "images/online.png",
+        "images/offline.png"
+      ],
+      "url": "https://onoffbudgetdr.herokuapp.com/",
+      
+      "technologies": [
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-mongodb-plain",
+          "name": "MongoDB"
+        },
+        {
+          "class": "devicon-heroku-plain",
+          "name": "Heroku"
+        }
+      ]
+    },
+    {
+      "title": "Toddler Town",
+      "startDate": "2020",
+      "description": "Working parents, especially a mother always finds it difficult to join back her work because they do not have much resources to send their young ones to a good day care.Picking an option from so many options available online and in person is always a big task.Especially for kids with special needs or who need extra attention, finalizing a good day care is of utmost importance.We’ve tried to address these problems by creating an app that allows a user to select a city where they reside/ or are planning to go and know about the 10 best and affordable day cares in their location.The user will be presented with the complete detail about a particular day care which will include its address, contacts and weblink to name a few.Not only this, but if the user wants to ask any question, in general, about a specific topic or wants to give in more information, they can go to our reviews section and share their information with others.",
+      "images": [
+        "images/landing.png",
+        "images/login.png",
+        "images/create.png",
+        "images/edit.png"
+      ],
+      "url": "https://toddlertown-cu.herokuapp.com/",
+      "technologies": [
+        {
+          "class": "devicon-handlebars-plain",
+          "name": "Handlebars"
+        },
+       {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-mysql-plain",
+          "name": "MySQL"
+        },
+       {
+          "class": "devicon-sequelize-plain",
+          "name": "Sequelize"
+        }
+       
+      ]
+    },
+    {
+      "title": " You Have Got Meme",
+      "startDate": "2020",
+      "description": "A very easy and responsive web app which lets you generate your own memes. A front end app where you can choose an image from your device and enter the header and footer details for it. Once done, you can generate a meme by clicking on the Your Meme button.",
+      "images": [
+        "images/ques.png",
+        "images/meme.gif",
+        "images/pixel.png"
+       
+      ],
+      "url": "https://dipti2021.github.io/YouHaveGotMeme/",
+      "technologies": [
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML"
+        },
+       {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS"
+        }
+      ]
+    },
+    {
+      "title": "Vibe Musical",
+      "startDate": "2020",
+      "description": "This app that not only allows a user of any age to know about any musical instrument that he may be interested in, but also he will be able to go through the history of that instrument and get to know about it in much detail. Not only this, but the user will be able to learn how to play the searched instrument with the help of a series of video tutorials. And if getting bored you can play some instruments to prop up your mood.",
+      "images": [
+        "images/vibe.png",
+        "images/historytutorial.png",
+        "images/instrument.png"
+        
+      ],
+      "url": "https://github.com/Dipti2021/BCS-Project-1",
+      "technologies": [
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS3"
+        }
+      ]
+    }
+  ]
+}
+
