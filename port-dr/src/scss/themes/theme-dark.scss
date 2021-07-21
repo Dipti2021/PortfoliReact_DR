@@ -1,7 +1,8 @@
 body[data-theme="dark"] {  
 
-    @import '../src/scss/dark-slider.scss';
- 
+    @import '../port-dr/src/scss/dark-slider.scss';
+    
+     
     .slider-tab {
        background-color: #8C8C8C;
     }
@@ -73,11 +74,7 @@ body[data-theme="dark"] {
           color: white !important;
        }
  
-       .experience-badge {
-          background: #919191 !important;
-          color: white;
-       }
- 
+      
        .main-badge {
           background: #919191 !important;
        }
