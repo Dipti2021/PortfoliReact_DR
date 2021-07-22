@@ -4,7 +4,7 @@ import "./App.scss";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
-//import Navbar from "./components/Navbar";
+//import Navbar from "./components/Navigation";
 
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";

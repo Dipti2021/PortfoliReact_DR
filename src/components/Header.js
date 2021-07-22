@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
+import { Route, Redirect, HashRouter } from "react-router-dom";
+import Navigation from "../components/Navigation";
+import About from "../components/About.js"
+import Projects from "../components/Projects.js";
+import Footer from '../components/Footer.js';
+import Resume from '../components/Resume.js';
+
+
+
 
 class Header extends Component {
   titles = [];
@@ -27,72 +36,89 @@ class Header extends Component {
   render() {
     if (this.props.sharedData) {
       var name = this.props.sharedData.name;
-      this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
+      this.titles = this.props.sharedData.titles.map(x => [x.toUpperCase(), 1500]).flat();
     }
 
-    const HeaderTitleTypeAnimation = React.memo( () => {
+    const HeaderTitleTypeAnimation = React.memo(() => {
       return <Typical className="title-styles" steps={this.titles} loop={50} />
     }, (props, prevProp) => true);
 
     return (
-      <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
-        <div className="row aligner" style={{height: '100%'}}>
-          <div className="col-md-12">
-            <div>
-              <span className="iconify header-icon" data-icon="icon-park:diamond" data-inline="false"></span>
-              <br/>
-              <h1 className="mb-0">
-                <Typical steps={[name]} wrapper="p" />
-              </h1>
-              <div className="title-container">
-                <HeaderTitleTypeAnimation />
+      <HashRouter>
+
+        <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
+          <Navigation />
+          <div className="row aligner" style={{ height: '100%' }}>
+            <div className="col-md-12">
+              <div>
+                <span className="iconify header-icon" data-icon="icon-park:diamond" data-inline="false"></span>
+                <br />
+                <h1 className="mb-0">
+                  <Typical steps={[name]} wrapper="p" />
+                </h1>
+                <div className="title-container">
+                  <HeaderTitleTypeAnimation />
+                </div>
+                <Switch
+                  checked={this.state.checked}
+                  onChange={this.onThemeSwitchChange}
+                  offColor="#635f52"// slider changes
+                  onColor="#d9d76c"
+                  className="react-switch mx-auto"
+                  width={100}
+                  height={40}
+                  uncheckedIcon={
+                    <span
+                      className="iconify"
+                      data-icon="twemoji:first-quarter-moon-face"
+                      data-inline="false"
+                      style={{
+                        display: "block",
+                        height: "100%",
+                        fontSize: 30,
+                        textAlign: "end",
+                        marginLeft: "20px",
+                        //color: "red",//"#353239",
+                      }}
+                    ></span>
+                  }
+                  checkedIcon={
+                    <span
+                      className="iconify"
+                      data-icon="noto-v1:sun-with-face"
+                      data-inline="false"
+                      style={{
+                        display: "block",
+                        height: "100%",
+                        fontSize: 25,
+                        textAlign: "end",
+                        marginLeft: "10px",
+                        color: "#253210",
+                      }}
+                    ></span>
+                  }
+                  id="icon-switch"
+                />
               </div>
-              <Switch
-                checked={this.state.checked}
-                onChange={this.onThemeSwitchChange}
-                offColor="#635f52"// slider changes
-                onColor="#d9d76c"
-                className="react-switch mx-auto"
-                width={100}
-                height={40}
-                uncheckedIcon={
-                  <span
-                    className="iconify"
-                    data-icon="twemoji:first-quarter-moon-face"
-                    data-inline="false"
-                    style={{
-                      display: "block",
-                      height: "100%",
-                      fontSize: 30,
-                     textAlign: "end",
-                      marginLeft: "20px",
-                      //color: "red",//"#353239",
-                    }}
-                  ></span>
-                }
-                checkedIcon={
-                  <span
-                    className="iconify"
-                    data-icon="noto-v1:sun-with-face"
-                    data-inline="false"
-                    style={{
-                      display: "block",
-                      height: "100%",
-                      fontSize: 25,
-                      textAlign: "end",
-                      marginLeft: "10px",
-                      color: "#253210",
-                    }}
-                  ></span>
-                }
-                id="icon-switch"
-              />
             </div>
+
           </div>
+
+        </header>
+
+        <div className="content">
+          <Route exact path="/" render={() => <Redirect to="/about" />} />
+          <Route path="/About" component={About} />
+          <Route path="/Projects" component={Projects} />
+          <Route path="/Footer" component={Footer} />
+          <Route path="/Resume" component={Resume} />
         </div>
-      </header>
+      </HashRouter>
     );
   }
+
+
+
 }
 
 export default Header;
